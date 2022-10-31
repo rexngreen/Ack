@@ -1,0 +1,29 @@
+// Ack.idl : type library source for Ack.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Ack.tlb).
+
+[ uuid(6edded05-bd98-449f-853f-493593c689d1), version(1.0) ]
+library Ack
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CAckDoc
+
+	[ uuid(b9978040-073a-4fdd-aaed-39b897a34ba7) ]
+	dispinterface IAck
+	{
+		properties:
+
+		methods:
+	};
+
+	//  Class information for CAckDoc
+
+	[ uuid(ee6069fc-7945-4f47-afb2-d2704d63e4d3) ]
+	coclass Ack
+	{
+		[default] dispinterface IAck;
+	};
+};

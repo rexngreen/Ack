@@ -1,0 +1,7 @@
+Standard Pt. To SA
+Fast Pt. To SA
+Precise Pt. To SA
+Steady Pt. To SA
+Fast Stable Pts. To SA
+Standard Stable Pts. To SA
+Precise Stable Pts. To SA

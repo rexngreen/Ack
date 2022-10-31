@@ -1,0 +1,17 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\Ack.Application = Ack Application
+
+
+HKEY_CLASSES_ROOT\Ack.Application\CLSID = {ee6069fc-7945-4f47-afb2-d2704d63e4d3}
+
+HKEY_CLASSES_ROOT\CLSID\{ee6069fc-7945-4f47-afb2-d2704d63e4d3} = Ack Application
+HKEY_CLASSES_ROOT\CLSID\{ee6069fc-7945-4f47-afb2-d2704d63e4d3}\ProgId = Ack.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{ee6069fc-7945-4f47-afb2-d2704d63e4d3}\LocalServer32 = Ack.EXE

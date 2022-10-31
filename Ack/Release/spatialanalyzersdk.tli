@@ -1,0 +1,1031 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.29.30145.0 (892d926a).
+//
+// C:\Users\greenr\source\repos\Ack\Ack\Release\spatialanalyzersdk.tli
+//
+// Wrapper implementations for Win32 type library C:\\Program Files (x86)\\New River Kinematics\\SpatialAnalyzer 2021.2.71490.1\\SpatialAnalyzerSDK.exe
+// compiler-generated file created 10/25/22 at 11:00:11 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface ISpatialAnalyzerSDK wrapper method implementations
+//
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::Connect ( _bstr_t ipAddress ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008", (BSTR)ipAddress);
+    return _result;
+}
+
+inline HRESULT ISpatialAnalyzerSDK::SetStep ( _bstr_t stepName ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008", (BSTR)stepName);
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::ExecuteStep ( ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_BOOL, (void*)&_result, NULL);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetPointNameArg ( _bstr_t argName, _bstr_t collectionName, _bstr_t groupName, _bstr_t targetName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008\x0008", (BSTR)argName, (BSTR)collectionName, (BSTR)groupName, (BSTR)targetName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetVectorArg ( _bstr_t argName, double XValue, double yValue, double zValue ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0005\x0005\x0005", (BSTR)argName, XValue, yValue, zValue);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCollectionObjectNameArg ( _bstr_t argName, _bstr_t collectionName, _bstr_t objectName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008", (BSTR)argName, (BSTR)collectionName, (BSTR)objectName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDoubleArg ( _bstr_t argName, double value ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0005", (BSTR)argName, value);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetDoubleArg ( _bstr_t argName, double * value ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4005", (BSTR)argName, value);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetIntegerArg ( _bstr_t argName, long value ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0003", (BSTR)argName, value);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetIntegerArg ( _bstr_t argName, long * value ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4003", (BSTR)argName, value);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetBoolArg ( _bstr_t argName, VARIANT_BOOL * value ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0xc, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400b", (BSTR)argName, value);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetBoolArg ( _bstr_t argName, VARIANT_BOOL value ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0xd, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x000b", (BSTR)argName, value);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetStringArg ( _bstr_t argName, _bstr_t value ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0xe, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)value);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetStringArg ( _bstr_t argName, BSTR * value ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0xf, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, value);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetPointNameArg ( _bstr_t argName, BSTR * collectionName, BSTR * groupName, BSTR * targetName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x10, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008\x4008\x4008", (BSTR)argName, collectionName, groupName, targetName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetVectorArg ( _bstr_t argName, double * XValue, double * yValue, double * zValue ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x11, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4005\x4005\x4005", (BSTR)argName, XValue, yValue, zValue);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetCollectionObjectNameArg ( _bstr_t argName, BSTR * collectionName, BSTR * objectName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x12, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008\x4008", (BSTR)argName, collectionName, objectName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetMPStepResult ( long * resultCode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x13, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x4003", resultCode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetMPStepMessages ( VARIANT * vArray ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x14, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x400c", vArray);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetObjectNameArg ( _bstr_t argName, _bstr_t objectName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x15, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)objectName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetObjectNameArg ( _bstr_t argName, BSTR * objectName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x16, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, objectName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetTransformArg ( _bstr_t argName, VARIANT * transform ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x17, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, transform);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetTransformArg ( _bstr_t argName, VARIANT * transform ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x18, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, transform);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetInstIdArg ( _bstr_t argName, long instId ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x19, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0003", (BSTR)argName, instId);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetInstIdArg ( _bstr_t argName, long * instId ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x1a, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4003", (BSTR)argName, instId);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetColInstIdArg ( _bstr_t argName, _bstr_t collectionName, long instId ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x1b, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0003", (BSTR)argName, (BSTR)collectionName, instId);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetColInstIdArg ( _bstr_t argName, BSTR * collectionName, long * instId ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x1c, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008\x4003", (BSTR)argName, collectionName, instId);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetFilePathArg ( _bstr_t argName, _bstr_t path, VARIANT_BOOL embeddedFile ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x1d, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x000b", (BSTR)argName, (BSTR)path, embeddedFile);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetFilePathArg ( _bstr_t argName, BSTR * path, VARIANT_BOOL * embeddedFile ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x1e, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008\x400b", (BSTR)argName, path, embeddedFile);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCollectionObjectNameRefListArg ( _bstr_t argName, VARIANT * objectNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x1f, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, objectNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetCollectionObjectNameRefListArg ( _bstr_t argName, VARIANT * objectNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x20, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, objectNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetFrameNameArg ( _bstr_t argName, _bstr_t frameName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x21, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)frameName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetFrameNameArg ( _bstr_t argName, BSTR * frameName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x22, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, frameName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCollectionNameArg ( _bstr_t argName, _bstr_t collectionName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x23, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)collectionName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetCollectionNameArg ( _bstr_t argName, BSTR * collectionName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x24, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, collectionName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetVectorGroupNameArg ( _bstr_t argName, _bstr_t vectorGrpName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x25, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)vectorGrpName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetVectorGroupNameArg ( _bstr_t argName, BSTR * vectorGrpName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x26, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, vectorGrpName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCloudNameArg ( _bstr_t argName, _bstr_t cloudName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x27, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)cloudName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetCloudNameArg ( _bstr_t argName, BSTR * cloudName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x28, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, cloudName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetPerimeterNameArg ( _bstr_t argName, _bstr_t perimeterName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x29, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)perimeterName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetPerimeterNameArg ( _bstr_t argName, BSTR * perimeterName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x2a, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, perimeterName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetChartNameArg ( _bstr_t argName, _bstr_t chartName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x2b, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)chartName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetChartNameArg ( _bstr_t argName, BSTR * chartName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x2c, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, chartName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetPointNameRefListArg ( _bstr_t argName, VARIANT * pointNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x2d, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, pointNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetPointNameRefListArg ( _bstr_t argName, VARIANT * pointNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x2e, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, pointNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetVectorNameRefListArg ( _bstr_t argName, VARIANT * vectorNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x2f, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, vectorNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetVectorNameRefListArg ( _bstr_t argName, VARIANT * vectorNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x30, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, vectorNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCollectionVectorGroupNameRefListArg ( _bstr_t argName, VARIANT * colVectorGrpNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x31, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, colVectorGrpNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetCollectionVectorGroupNameRefListArg ( _bstr_t argName, VARIANT * colVectorGrpNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x32, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, colVectorGrpNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetWorldTransformArg ( _bstr_t argName, VARIANT * transform, double scaleFactor ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x33, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c\x0005", (BSTR)argName, transform, scaleFactor);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetWorldTransformArg ( _bstr_t argName, VARIANT * transform, double * scaleFactor ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x34, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c\x4005", (BSTR)argName, transform, scaleFactor);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetInstTypeNameArg ( _bstr_t argName, _bstr_t instType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x35, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)instType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetFontTypeArg ( _bstr_t argName, _bstr_t fontName, unsigned char fontSize, unsigned char redColorVal, unsigned char greenColorVal, unsigned char blueColorVal ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x36, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0011\x0011\x0011\x0011", (BSTR)argName, (BSTR)fontName, fontSize, redColorVal, greenColorVal, blueColorVal);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetGeometryTypeArg ( _bstr_t argName, _bstr_t geometryType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x37, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)geometryType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetSAInteractionModeArg ( _bstr_t argName, _bstr_t saInteractionMode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x38, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)saInteractionMode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetMPInteractionModeArg ( _bstr_t argName, _bstr_t mpInteractionMode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x39, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mpInteractionMode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetMPDialogInteractionModeArg ( _bstr_t argName, _bstr_t mpDialogInteractionMode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x3a, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mpDialogInteractionMode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetWorkbookAddressModeTypeArg ( _bstr_t argName, _bstr_t workbookAddressMode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x3b, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)workbookAddressMode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetMoveDirectionTypeArg ( _bstr_t argName, _bstr_t moveDirection ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x3c, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)moveDirection);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetWriteModeTypeArg ( _bstr_t argName, _bstr_t writeMode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x3d, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)writeMode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetProjectionOptionsArg ( _bstr_t argName, _bstr_t projectionType, VARIANT_BOOL bIgnoreEdgeProjections, VARIANT_BOOL bOverrideTargetOffsets, double overrideTargetOffsetsValue, VARIANT_BOOL bAddExtraMaterialThickness, double extraMaterialThicknessValue ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x3e, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x000b\x000b\x0005\x000b\x0005", (BSTR)argName, (BSTR)projectionType, bIgnoreEdgeProjections, bOverrideTargetOffsets, overrideTargetOffsetsValue, bAddExtraMaterialThickness, extraMaterialThicknessValue);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCollectionGroupNameRefListArg ( _bstr_t argName, VARIANT * groupNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x3f, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, groupNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetCollectionGroupNameRefListArg ( _bstr_t argName, VARIANT * colGroupNameList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x40, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, colGroupNameList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetExportDataDelimeterTypeArg ( _bstr_t argName, _bstr_t delimeterType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x41, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)delimeterType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetExportTargetNameFormatArg ( _bstr_t argName, _bstr_t targetNameFormat ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x42, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)targetNameFormat);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCoordinateSystemTypeArg ( _bstr_t argName, _bstr_t coordSystemType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x43, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)coordSystemType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetAsciiFileFormatArg ( _bstr_t argName, _bstr_t asciiFileFormat ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x44, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)asciiFileFormat);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDistanceUnitsArg ( _bstr_t argName, _bstr_t distanceUnits ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x45, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)distanceUnits);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetObjectTypeArg ( _bstr_t argName, _bstr_t objectType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x46, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)objectType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetViewNameArg ( _bstr_t argName, _bstr_t viewName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x47, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)viewName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetViewNameArg ( _bstr_t argName, BSTR * viewName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x48, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, viewName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetColVectorGroupNameArg ( _bstr_t argName, _bstr_t collectionName, _bstr_t vectorGroupName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x49, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008", (BSTR)argName, (BSTR)collectionName, (BSTR)vectorGroupName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetColVectorGroupNameArg ( _bstr_t argName, BSTR * collectionName, BSTR * vectorGroupName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x4a, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008\x4008", (BSTR)argName, collectionName, vectorGroupName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetColInstIdRefListArg ( _bstr_t argName, VARIANT * colInstIdList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x4b, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, colInstIdList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetColInstIdRefListArg ( _bstr_t argName, VARIANT * colInstIdList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x4c, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, colInstIdList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetFitDofOptionsArg ( _bstr_t argName, VARIANT_BOOL bAllowX, VARIANT_BOOL bAllowY, VARIANT_BOOL bAllowZ, VARIANT_BOOL bAllowRx, VARIANT_BOOL bAllowRy, VARIANT_BOOL bAllowRz, VARIANT_BOOL bRotateAboutCentroid ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x4d, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x000b\x000b\x000b\x000b\x000b\x000b\x000b", (BSTR)argName, bAllowX, bAllowY, bAllowZ, bAllowRx, bAllowRy, bAllowRz, bRotateAboutCentroid);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetReportOutputOptionsArg ( _bstr_t argName, _bstr_t outputType, _bstr_t pathOrEmbeddedName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x4e, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008", (BSTR)argName, (BSTR)outputType, (BSTR)pathOrEmbeddedName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetReportOutputOptionsArg ( _bstr_t argName, BSTR * outputType, BSTR * pathOrEmbeddedName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x4f, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008\x4008", (BSTR)argName, outputType, pathOrEmbeddedName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetStringRefListArg ( _bstr_t argName, VARIANT * stringList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x50, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, stringList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetStringRefListArg ( _bstr_t argName, VARIANT * stringList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x51, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, stringList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetUserSummaryInfoFilesArg ( _bstr_t argName, _bstr_t leftSummaryFilePath, _bstr_t rightSummaryFilePath ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x52, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008", (BSTR)argName, (BSTR)leftSummaryFilePath, (BSTR)rightSummaryFilePath);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetReportViewOptionsArg ( _bstr_t argName, _bstr_t viewType, _bstr_t collectionName, _bstr_t calloutName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x53, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008\x0008", (BSTR)argName, (BSTR)viewType, (BSTR)collectionName, (BSTR)calloutName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetReportViewOptionsArg ( _bstr_t argName, BSTR * viewType, BSTR * collectionName, BSTR * calloutName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x54, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008\x4008\x4008", (BSTR)argName, viewType, collectionName, calloutName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetAxisNameArg ( _bstr_t argName, _bstr_t axisName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x55, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)axisName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetReportTypeArg ( _bstr_t argName, _bstr_t reportType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x56, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)reportType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetBaseColorTypeArg ( _bstr_t argName, _bstr_t baseColorType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x57, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)baseColorType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetColorRangeMethodArg ( _bstr_t argName, _bstr_t colorRangeMethod ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x58, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)colorRangeMethod);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetColorizationOptionsArg ( _bstr_t argName, _bstr_t colorRangeMethod, _bstr_t baseHighColor, _bstr_t baseMidColor, _bstr_t baseLowColor, VARIANT_BOOL bDrawTubes, VARIANT_BOOL bDrawArrowheads, VARIANT_BOOL bIndicateValues, double vectorMagnification, long vectorWidth, VARIANT_BOOL bDrawBlotches, double blotchSize, VARIANT_BOOL bShowOutOfToleranceOnly, VARIANT_BOOL bShowColorBarInView, VARIANT_BOOL bShowColorBarPercentages, VARIANT_BOOL bShowColorBarFractions, double highSaturationLimit, double lowSaturationLimit, double highTolerance, double lowTolerance ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x59, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008\x0008\x0008\x000b\x000b\x000b\x0005\x0003\x000b\x0005\x000b\x000b\x000b\x000b\x0005\x0005\x0005\x0005", (BSTR)argName, (BSTR)colorRangeMethod, (BSTR)baseHighColor, (BSTR)baseMidColor, (BSTR)baseLowColor, bDrawTubes, bDrawArrowheads, bIndicateValues, vectorMagnification, vectorWidth, bDrawBlotches, blotchSize, bShowOutOfToleranceOnly, bShowColorBarInView, bShowColorBarPercentages, bShowColorBarFractions, highSaturationLimit, lowSaturationLimit, highTolerance, lowTolerance);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetColorArg ( _bstr_t argName, unsigned char redColorVal, unsigned char greenColorVal, unsigned char blueColorVal ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x5a, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0011\x0011\x0011", (BSTR)argName, redColorVal, greenColorVal, blueColorVal);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::ConnectEx ( _bstr_t ipAddress, long * statusCode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x5b, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4003", (BSTR)ipAddress, statusCode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetWindowStateArg ( _bstr_t argName, _bstr_t windowState ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x5c, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)windowState);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetResultArg ( _bstr_t argName, _bstr_t objectName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x5d, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)objectName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetResultArg ( _bstr_t argName, BSTR * objectName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x5e, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008", (BSTR)argName, objectName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetRenderModeTypeArg ( _bstr_t argName, _bstr_t renderModeType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x5f, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)renderModeType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetSurfDissectModeTypeArg ( _bstr_t argName, _bstr_t dissectModeType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x60, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)dissectModeType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetShowUsmnDialogTypeArg ( _bstr_t argName, _bstr_t showType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x61, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)showType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetReportPageSettingsArg ( _bstr_t argName, _bstr_t pageOrientation ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x62, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)pageOrientation);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetPointDeltaReportOptionsArg ( _bstr_t argName, _bstr_t coordSys, _bstr_t detailsFormat, VARIANT_BOOL bShowA, VARIANT_BOOL bShowB, VARIANT_BOOL bShowDelta, VARIANT_BOOL bShowMag, VARIANT_BOOL bShowComponent1, VARIANT_BOOL bShowComponent2, VARIANT_BOOL bShowComponent3, VARIANT_BOOL bSortPointNames, VARIANT_BOOL bShowToleranceFields, VARIANT_BOOL bColorizeInToleranceFields ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x63, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008\x000b\x000b\x000b\x000b\x000b\x000b\x000b\x000b\x000b\x000b", (BSTR)argName, (BSTR)coordSys, (BSTR)detailsFormat, bShowA, bShowB, bShowDelta, bShowMag, bShowComponent1, bShowComponent2, bShowComponent3, bSortPointNames, bShowToleranceFields, bColorizeInToleranceFields);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDatasetTypeArg ( _bstr_t argName, _bstr_t datasetType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x64, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)datasetType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetChartTypeArg ( _bstr_t argName, _bstr_t chartType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x65, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)chartType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetColMachineIdArg ( _bstr_t argName, _bstr_t collectionName, long machineId ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x66, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0003", (BSTR)argName, (BSTR)collectionName, machineId);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetColMachineIdArg ( _bstr_t argName, BSTR * collectionName, long * machineId ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x67, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4008\x4003", (BSTR)argName, collectionName, machineId);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetExportVectorNameFormatArg ( _bstr_t argName, _bstr_t vectorNameFormat ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x68, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)vectorNameFormat);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetSystemStringArg ( _bstr_t argName, _bstr_t systemStrName ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x69, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)systemStrName);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCloudThinningOptionsArg ( _bstr_t argName, _bstr_t thinMode, long pointIncrement, long minNumPts, long maxNumPts ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x6a, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0003\x0003\x0003", (BSTR)argName, (BSTR)thinMode, pointIncrement, minNumPts, maxNumPts);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetToleranceScalarOptionsArg ( _bstr_t argName, VARIANT_BOOL bUseHigh, double highTol, VARIANT_BOOL bUseLow, double lowTol ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x6b, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x000b\x0005\x000b\x0005", (BSTR)argName, bUseHigh, highTol, bUseLow, lowTol);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetToleranceScalarOptionsArg ( _bstr_t argName, VARIANT_BOOL * bUseHigh, double * highTol, VARIANT_BOOL * bUseLow, double * lowTol ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x6c, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400b\x4005\x400b\x4005", (BSTR)argName, bUseHigh, highTol, bUseLow, lowTol);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetOffsetDirectionTypeArg ( _bstr_t argName, _bstr_t offsetDirType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x6d, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)offsetDirType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCollectionObjectNameArg2 ( _bstr_t argName, _bstr_t collectionName, _bstr_t objectName, _bstr_t objectType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x6e, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008\x0008\x0008", (BSTR)argName, (BSTR)collectionName, (BSTR)objectName, (BSTR)objectType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDoubleArrayArg ( _bstr_t argName, long arraySize, VARIANT * arrayOut ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x6f, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0003\x400c", (BSTR)argName, arraySize, arrayOut);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetDoubleArrayArg ( _bstr_t argName, long * arraySize, VARIANT * arrayIn ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x70, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x4003\x400c", (BSTR)argName, arraySize, arrayIn);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetToleranceVectorOptionsArg ( _bstr_t argName, VARIANT_BOOL bUseHighX, double highTolX, VARIANT_BOOL bUseHighY, double highTolY, VARIANT_BOOL bUseHighZ, double highTolZ, VARIANT_BOOL bUseHighM, double highTolM, VARIANT_BOOL bUseLowX, double lowTolX, VARIANT_BOOL bUseLowY, double lowTolY, VARIANT_BOOL bUseLowZ, double lowTolZ, VARIANT_BOOL bUseLowM, double lowTolM ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x71, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x000b\x0005\x000b\x0005\x000b\x0005\x000b\x0005\x000b\x0005\x000b\x0005\x000b\x0005\x000b\x0005", (BSTR)argName, bUseHighX, highTolX, bUseHighY, highTolY, bUseHighZ, highTolZ, bUseHighM, highTolM, bUseLowX, lowTolX, bUseLowY, lowTolY, bUseLowZ, lowTolZ, bUseLowM, lowTolM);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetToleranceVectorOptionsArg ( _bstr_t argName, VARIANT_BOOL * bUseHighX, double * highTolX, VARIANT_BOOL * bUseHighY, double * highTolY, VARIANT_BOOL * bUseHighZ, double * highTolZ, VARIANT_BOOL * bUseHighM, double * highTolM, VARIANT_BOOL * bUseLowX, double * lowTolX, VARIANT_BOOL * bUseLowY, double * lowTolY, VARIANT_BOOL * bUseLowZ, double * lowTolZ, VARIANT_BOOL * bUseLowM, double * lowTolM ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x72, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400b\x4005\x400b\x4005\x400b\x4005\x400b\x4005\x400b\x4005\x400b\x4005\x400b\x4005\x400b\x4005", (BSTR)argName, bUseHighX, highTolX, bUseHighY, highTolY, bUseHighZ, highTolZ, bUseHighM, highTolM, bUseLowX, lowTolX, bUseLowY, lowTolY, bUseLowZ, lowTolZ, bUseLowM, lowTolM);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetAngularUnitsArg ( _bstr_t argName, _bstr_t angularUnits ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x73, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)angularUnits);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetLogarithmicFunctionArg ( _bstr_t argName, _bstr_t logarithmicFunction ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x74, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)logarithmicFunction);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetTrigFunctionArg ( _bstr_t argName, _bstr_t trigFunction ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x75, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)trigFunction);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetMathOperationArg ( _bstr_t argName, _bstr_t mathOperation ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x76, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mathOperation);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetNumComparisonTypeArg ( _bstr_t argName, _bstr_t compType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x77, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)compType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetSaturationLimitTypeArg ( _bstr_t argName, _bstr_t satLimitType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x78, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)satLimitType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetSurfaceAnalysisModeArg ( _bstr_t argName, _bstr_t surfAnalysisMode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x79, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)surfAnalysisMode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetEdgeModeArg ( _bstr_t argName, _bstr_t edgeMode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x7a, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)edgeMode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetBaseMidColorTypeArg ( _bstr_t argName, _bstr_t baseMidColorType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x7b, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)baseMidColorType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetEditTextArg ( _bstr_t argName, VARIANT * stringList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x7c, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, stringList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetEditTextArg ( _bstr_t argName, VARIANT * stringList ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x7d, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)argName, stringList);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDegreeOfFreedomArg ( _bstr_t argName, _bstr_t degOfFreedom ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x7e, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)degOfFreedom);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetFitMethodArg ( _bstr_t argName, _bstr_t fitMethod ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x7f, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)fitMethod);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetSlotTypeArg ( _bstr_t argName, _bstr_t slotType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x80, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)slotType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCompTechniqueArg ( _bstr_t argName, _bstr_t compTech ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x81, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)compTech);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetNormalDirectionArg ( _bstr_t argName, _bstr_t normDir ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x82, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)normDir);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetMeasuredSideForPlanarOffsetArg ( _bstr_t argName, _bstr_t measSide ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x83, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)measSide);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetMeasuredSideForRadialOffsetArg ( _bstr_t argName, _bstr_t measSide ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x84, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)measSide);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetTranslucencyTypeArg ( _bstr_t argName, _bstr_t type ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x85, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)type);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetUdpTransmitSettingsArg ( _bstr_t argName, VARIANT_BOOL bEnabled, VARIANT_BOOL bBroadcast, _bstr_t compName, long port ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x86, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x000b\x000b\x0008\x0003", (BSTR)argName, bEnabled, bBroadcast, (BSTR)compName, port);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetTemperatureUnitsArg ( _bstr_t argName, _bstr_t tempUnits ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x87, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)tempUnits);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetTargetComputationMethodArg ( _bstr_t argName, _bstr_t compMethod ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x88, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)compMethod);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetBSplineFitOptionsArg ( _bstr_t argName, VARIANT_BOOL bFit, VARIANT_BOOL bOpen, long sortMethod, long terminateMethod, long degree, double terminateLength, double terminateAvgMultiplier, long numFitCPs, VARIANT_BOOL uniqueCheck, double uniqueThreshold, double extension, VARIANT_BOOL useGlobalTessellationOptions, double maxChordalDeviation, double maxTrimEdgeAngle ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x89, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x000b\x000b\x0003\x0003\x0003\x0005\x0005\x0003\x000b\x0005\x0005\x000b\x0005\x0005", (BSTR)argName, bFit, bOpen, sortMethod, terminateMethod, degree, terminateLength, terminateAvgMultiplier, numFitCPs, uniqueCheck, uniqueThreshold, extension, useGlobalTessellationOptions, maxChordalDeviation, maxTrimEdgeAngle);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::GetBSPlineFitOptionsArg ( _bstr_t argName, VARIANT_BOOL * bFit, VARIANT_BOOL * bOpen, long * sortMethod, long * terminateMethod, long * degree, double * terminateLength, double * terminateAvgMultiplier, long * numFitCPs, VARIANT_BOOL * uniqueCheck, double * uniqueThreshold, double * extension, VARIANT_BOOL * useGlobalTessellationOptions, double * maxChordalDeviation, double * maxTrimEdgeAngle ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x8a, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x400b\x400b\x4003\x4003\x4003\x4005\x4005\x4003\x400b\x4005\x4005\x400b\x4005\x4005", (BSTR)argName, bFit, bOpen, sortMethod, terminateMethod, degree, terminateLength, terminateAvgMultiplier, numFitCPs, uniqueCheck, uniqueThreshold, extension, useGlobalTessellationOptions, maxChordalDeviation, maxTrimEdgeAngle);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetSphereFitComputationModeArg ( _bstr_t argName, _bstr_t fitMode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x8b, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)fitMode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDynamicPointModeArg ( _bstr_t argName, _bstr_t mode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x8d, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDynamicLineModeArg ( _bstr_t argName, _bstr_t mode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x8e, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDynamicPlaneModeArg ( _bstr_t argName, _bstr_t mode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x8f, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDynamicCircleModeArg ( _bstr_t argName, _bstr_t mode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x90, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetDynamicEllipseModeArg ( _bstr_t argName, _bstr_t mode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x91, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetPointFilterInputTypeArg ( _bstr_t argName, _bstr_t pointsInputType ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x92, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)pointsInputType);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCollimationTypeArg ( _bstr_t argName, _bstr_t mode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x93, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mode);
+    return _result;
+}
+
+inline VARIANT_BOOL ISpatialAnalyzerSDK::SetCollimationBaselineTypeArg ( _bstr_t argName, _bstr_t mode ) {
+    VARIANT_BOOL _result = 0;
+    _com_dispatch_method(this, 0x94, DISPATCH_METHOD, VT_BOOL, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)argName, (BSTR)mode);
+    return _result;
+}
