@@ -371,14 +371,6 @@ void CAckDlg::OnBnClickedSaveas()
 	sa.SetIntegerArg(_T("Optional Number"), 0);
 	sa.ExecuteStep();
 
-	/* Code below is used for deugging */
-	/**
-	std::ofstream myfile;
-	myfile.open("C:/scream.txt");
-	myfile << "Username: " << username << "\nuname: " << uname;
-	myfile << "\n" << saveTo;
-	myfile.close();
-	/**/
 
 	// Notify the user that the file was saved and where it was saved to
 	AfxMessageBox("The Spatial Analyzer file was saved with the name: " + fileName + ".xit64" +
@@ -429,24 +421,6 @@ void CAckDlg::OnBnClickedRunMp()
 */
 void CAckDlg::OnBnClickedPrevpoint()
 {
-	/**
-	CString temp;
-	std::string point;
-	int bufferLength = m_curPointName.LineLength();
-	// Check that the textbox is not empty
-	if (bufferLength == 0)
-	{
-		AfxMessageBox(_T("ERROR: The Point Name is empty."));
-		return;
-	}
-
-	// Get the current Point Name from the IDC_PointName textbox
-	m_curPointName.GetLine(0, temp.GetBuffer(bufferLength), bufferLength);
-	temp.SetString(temp.GetBuffer(), bufferLength);
-	point = temp.GetString();
-
-	temp.ReleaseBuffer();									// temp is no longer needed, we'll release its buffer
-	/**/
 	std::string point = GetPointName();
 
 	// Parse the string into the point name and its number
@@ -477,24 +451,6 @@ void CAckDlg::OnBnClickedPrevpoint()
 */
 void CAckDlg::OnBnClickedNextpoint()
 {
-	/**
-	CString temp;
-	std::string point;
-	int bufferLength = m_curPointName.LineLength();
-	// Check that the textbox is not empty
-	if (bufferLength == 0)
-	{
-		AfxMessageBox(_T("ERROR: The Point Name is empty."));
-		return;
-	}
-
-	// Get the current Point Name from the IDC_PointName textbox
-	m_curPointName.GetLine(0, temp.GetBuffer(bufferLength), bufferLength);
-	temp.SetString(temp.GetBuffer(), bufferLength);
-	point = temp.GetString();
-
-	temp.ReleaseBuffer();									// temp is no longer needed, we'll release its buffer
-	/**/
 
 	std::string point = GetPointName();
 
@@ -1544,62 +1500,11 @@ BOOL CAckDlg::PreTranslateMessage(MSG* pMsg)
 		// Take measurement
 		if (X == VK_SUBTRACT)		{ OnBnClickedMeasure();			return TRUE; }
 
-		/**
-		// Take measurement
-		if (EnterInUse)			// This flag means we just called a function that used the Enter key. Flush the 
-								// pMsg queue, otherwise it'll all be processed once the function call is over
-								// and we don't want that unexpected behavior
-		{
-			MSG msg;
-
-			while (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
-			{
-				if (pMsg->message == WM_KEYDOWN) //(msg.message == WM_KEYDOWN)
-				{
-					TranslateMessage(&msg);
-					DispatchMessage(&msg);
-				}
-			}	// end while-loop
-
-			EnterInUse = false;
-			return TRUE;
-		}
-		else
-		{
-			if (X == VK_RETURN)
-			{
-				OnBnClickedMeasure();
-				return TRUE;
-			}
-		}
-		/* TODO: Delete code above */
 		
 
-		/* Code below is used for deugging */
-		/**
-		std::ofstream myfile;
-		myfile.open("C:/scream.txt");
-		myfile << msg;
-		myfile.close();
-		/**/
 	}
 
 
 
 	return CDialog::PreTranslateMessage(pMsg);
 }
-
-
-/*
-* The two functions below are utility functions which simply check to see if a file exists.
-* The are overloaded so that the utility funciton can be performed on both CString and std::string
-* 
-* Inputs:
-*	@ file	-	the name of the file whose existence will be checked
-* 
-* Outputs:
-*	@ returns a true or false
-* 
-* Results:
-*	N/A
-*/

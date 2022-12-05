@@ -97,14 +97,6 @@ BOOL AckDlg2::PreTranslateMessage(MSG* pMsg)
 {
     int X = (int)pMsg->wParam;
 
-    /* Code below is used for deugging */
-    /**
-    std::ofstream myfile;
-    myfile.open("C:/scream.txt");
-    myfile << X;
-    myfile.close();
-    /**/
-
     // If a key has been pressed, do something
     if (pMsg->message == WM_KEYDOWN) { return FALSE; }
     return CDialog::PreTranslateMessage(pMsg);
