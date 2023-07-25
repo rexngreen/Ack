@@ -16,6 +16,7 @@
 #include <Lmcons.h>
 #include <string>
 #include <Windows.h>
+#include <vector>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
